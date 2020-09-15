@@ -3,7 +3,7 @@
 ## Project Requirements  
 *While you're building your quiz app, you'll need to keep in mind what your app must do and how it should be built.*  
   
-## User experience requirements  
+### User experience requirements  
 #### The following requirements cover what the app must do, from the user's perspective.  
   
 - The starting screen should have a button that users can click to start the quiz.  
@@ -18,7 +18,7 @@
 - Users should be shown their overall score at the end of the quiz. In other words, how many questions they got right out of the total questions asked.  
 - Users should be able to start a new quiz.  
 
-## Technical requirements  
+### Technical requirements  
 #### Your quiz app must:  
 - Include a render() function, that conditionally regenerates the view each time the store is updated.  
 - Include single-purpose template generation functions.  
@@ -31,7 +31,7 @@
 - Use responsive design.  
   - Refer back to the previous checkpoints on responsive design and forms for any help with the HTML/CSS materials.  
   
-## Process requirements  
+### Process requirements  
 #### Before you dive into the app, you'll need to:  
   
 - gather content for your app. That means typing up the questions you'll ask and gathering any images or icons you'll need.  
