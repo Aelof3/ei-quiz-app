@@ -1,6 +1,17 @@
 # Quiz: WebGL and Canvas 3D  
+*By ***Richard Folea****  
   
-[LIVE DEMO](https://aelof3.github.io/ei-quiz-app/)  
+***[LIVE DEMO](https://aelof3.github.io/ei-quiz-app/)***  
+  
+## About
+- This quiz is inspired by three.js, as I enjoy using it to produce 3D games and simulations.  
+- To bring this quiz to life, I used:
+  - Custom Events
+  - Custom Classes
+  - Lifecycle Hooks
+  - ES6 Modules
+  
+---
   
 ## Project Requirements  
 *While you're building your quiz app, you'll need to keep in mind what your app must do and how it should be built.*  
