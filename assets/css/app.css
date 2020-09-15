@@ -11,17 +11,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&display=swap');
 
 /* BASE HTML ELEMENTS */
-:root {
-  --color-light-grey: #aaa;
-  --color-lighter-grey: #ccc;
-  --color-lightest-grey: #eee;
-  --color-white: #fff;
-  --color-dark-grey: #444;
-  --color-green: #0a0;
-  --color-purple: #909;
-  --color-red: #a00;
-  --color-black: #000;
-}
 
 *{
   box-sizing: border-box;
@@ -43,19 +32,19 @@ button {
   transition-duration: 0.25s;
   margin: 15px 0;
   padding: 15px;
-  background-color: var(--color-lightest-grey, #eee);
+  background-color: #eee;
   cursor: pointer;
   width: 100%;
 }
 button:hover {
   transition-duration: 0.25s;
   transform: scale(1.01,1.01);
-  box-shadow: 0px 10px 10px var(--color-light-grey,#aaa);
+  box-shadow: 0px 10px 10px #aaa;
 }
 button:active {
   transition-duration: 0.25s;
   transform: scale(1,1);
-  box-shadow: 0px 7px 7px var(--color-light-grey,#aaa);
+  box-shadow: 0px 7px 7px #aaa;
 }
 
 h1, h2, h3 {
@@ -98,7 +87,7 @@ main form h3 {
 main form h3::before {
   content: 'Q:';
   font-size: 3rem;
-  color: var(--color-light-grey,#aaa);
+  color: #aaa;
   min-height: 4rem;
   padding: 0;
   margin:0;
@@ -128,9 +117,9 @@ main form h3::before {
 .answers label:hover{
   transition-duration: 0.25s;
   transform: scale(1.01,1.01);
-  box-shadow: 0px 10px 10px var(--color-light-grey,#aaa);
-  background-color: var(--color-dark-grey,#444);
-  color: var(--color-white,#fff);
+  box-shadow: 0px 10px 10px #aaa;
+  background-color: #444;
+  color: #fff;
 }
 
 .answers label input {
@@ -150,7 +139,7 @@ main form h3::before {
   position: absolute;
   top:0;
   left:0;
-  background-color: var(--color-black,#000);
+  background-color: #000;
   transition-duration: 0.5s;
   z-index: -1;
 }
@@ -162,21 +151,21 @@ main form h3::before {
   position: absolute;
   top:0;
   left:0;
-  background-color: var(--color-lighter-grey,#ccc);
+  background-color: #ccc;
   transition-duration: 0.5s;
   z-index: -1;
 }
 
 .correctAnswer {
   transition-duration: 0.5s;
-  color: var(--color-white,#fff);
-  background-color: var(--color-green,#0a0);
+  color: #fff;
+  background-color: #0a0;
 }
 
 .incorrectAnswer {
   transition-duration: 0.5s;
-  background-color: var(--color-red,#a00);
-  color: var(--color-white,#fff);
+  background-color: #a00;
+  color: #fff;
 }
 
 /* DASHBOARD - SCORE AND CURRENT QUESTION NUMBER */
@@ -189,7 +178,7 @@ main form h3::before {
 }
 
 .dashboard h2 {
-  color: var(--color-purple,#909);
+  color: #909;
 }
 
 .startbutton {
@@ -201,9 +190,9 @@ main form h3::before {
 .startbutton:hover {
   transition-duration: 0.25s;
   transform: scale(1.01,1.01);
-  box-shadow: 0px 10px 10px var(--color-light-grey,#aaa);
-  background-color: var(--color-dark-grey,#444);
-  color: var(--color-white,#fff);
+  box-shadow: 0px 10px 10px #aaa;
+  background-color: #444;
+  color: #fff;
 }
 
 /* ANIMATIONS */
