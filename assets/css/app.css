@@ -11,16 +11,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&display=swap');
 
 /* BASE HTML ELEMENTS */
-:root{
-  --light-grey: #aaa;
-  --lighter-grey: #ccc;
-  --lightest-grey: #eee;
-  --white: #fff;
-  --dark-grey: #444;
-  --green: #0a0;
-  --purple: #909;
-  --red: #a00;
-  --black: #000;
+:root {
+  --color-light-grey: #aaa;
+  --color-lighter-grey: #ccc;
+  --color-lightest-grey: #eee;
+  --color-white: #fff;
+  --color-dark-grey: #444;
+  --color-green: #0a0;
+  --color-purple: #909;
+  --color-red: #a00;
+  --color-black: #000;
 }
 
 *{
@@ -43,19 +43,19 @@ button {
   transition-duration: 0.25s;
   margin: 15px 0;
   padding: 15px;
-  background-color: var(--lightest-grey);
+  background-color: var(--color-lightest-grey, #eee);
   cursor: pointer;
   width: 100%;
 }
 button:hover {
   transition-duration: 0.25s;
   transform: scale(1.01,1.01);
-  box-shadow: 0px 10px 10px var(--light-grey);
+  box-shadow: 0px 10px 10px var(--color-light-grey,#aaa);
 }
 button:active {
   transition-duration: 0.25s;
   transform: scale(1,1);
-  box-shadow: 0px 7px 7px var(--light-grey);
+  box-shadow: 0px 7px 7px var(--color-light-grey,#aaa);
 }
 
 h1, h2, h3 {
@@ -98,7 +98,7 @@ main form h3 {
 main form h3::before {
   content: 'Q:';
   font-size: 3rem;
-  color: var(--light-grey);
+  color: var(--color-light-grey,#aaa);
   min-height: 4rem;
   padding: 0;
   margin:0;
@@ -128,9 +128,9 @@ main form h3::before {
 .answers label:hover{
   transition-duration: 0.25s;
   transform: scale(1.01,1.01);
-  box-shadow: 0px 10px 10px var(--light-grey);
-  background-color: var(--dark-grey);
-  color: var(--white);
+  box-shadow: 0px 10px 10px var(--color-light-grey,#aaa);
+  background-color: var(--color-dark-grey,#444);
+  color: var(--color-white,#fff);
 }
 
 .answers label input {
@@ -150,7 +150,7 @@ main form h3::before {
   position: absolute;
   top:0;
   left:0;
-  background-color: var(--black);
+  background-color: var(--color-black,#000);
   transition-duration: 0.5s;
   z-index: -1;
 }
@@ -162,21 +162,21 @@ main form h3::before {
   position: absolute;
   top:0;
   left:0;
-  background-color: var(--lighter-grey);
+  background-color: var(--color-lighter-grey,#ccc);
   transition-duration: 0.5s;
   z-index: -1;
 }
 
 .correctAnswer {
   transition-duration: 0.5s;
-  color: var(--white);
-  background-color: var(--green);
+  color: var(--color-white,#fff);
+  background-color: var(--color-green,#0a0);
 }
 
 .incorrectAnswer {
   transition-duration: 0.5s;
-  background-color: var(--red);
-  color: var(--white);
+  background-color: var(--color-red,#a00);
+  color: var(--color-white,#fff);
 }
 
 /* DASHBOARD - SCORE AND CURRENT QUESTION NUMBER */
@@ -189,7 +189,7 @@ main form h3::before {
 }
 
 .dashboard h2 {
-  color: var(--purple);
+  color: var(--color-purple,#909);
 }
 
 .startbutton {
@@ -201,9 +201,9 @@ main form h3::before {
 .startbutton:hover {
   transition-duration: 0.25s;
   transform: scale(1.01,1.01);
-  box-shadow: 0px 10px 10px var(--light-grey);
-  background-color: var(--dark-grey);
-  color: var(--white);
+  box-shadow: 0px 10px 10px var(--color-light-grey,#aaa);
+  background-color: var(--color-dark-grey,#444);
+  color: var(--color-white,#fff);
 }
 
 /* ANIMATIONS */
