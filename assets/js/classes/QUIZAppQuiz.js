@@ -21,7 +21,7 @@ export default class QUIZAppQuiz {
     }
 
     startQuiz( ){
-        let startButton = this.h2e( `<div class="startbutton">START</div>`);
+        let startButton = this.h2e( `<button tabindex="1" class="startbutton">START</button>`);
         this.el = document.querySelectorAll( "main" )[0];
         this.el.appendChild( startButton );
         startButton.onclick = ( e )=>{
@@ -90,7 +90,7 @@ export default class QUIZAppQuiz {
 
     renderFinishedDashboard( ){
         let dashboard = this.h2e( `<div class="dashboard"><h2>Quiz Finished</h2></div>` );
-        let replay = this.h2e( `<button class="replay">Replay?</button>` );
+        let replay = this.h2e( `<button tabindex="1" class="replay">Replay?</button>` );
         replay.onclick = ( e )=>{
             e.preventDefault( );
             location.reload( );

@@ -41,8 +41,8 @@ export default class QUIZAppQuestion {
 
         this.html.answers = [];
 
-        for ( let answer of this.answers ){
-            let a = this.h2e(`<label><input name="answer" type="radio" value="${answer}" class="answer" />${answer}</label>`);
+        for ( let i=0;i<this.answers.length;i++ ){
+            let a = this.h2e(`<label><input name="answer" tabindex="${i+1}" type="radio" value="${this.answers[i]}" class="answer" />${this.answers[i]}</label>`);
             this.html.answers.push( a );
             this.html.answerWrap.appendChild( a );
         }
