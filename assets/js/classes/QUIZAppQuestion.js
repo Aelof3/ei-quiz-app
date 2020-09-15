@@ -42,7 +42,7 @@ export default class QUIZAppQuestion {
         this.html.answers = [];
 
         for ( let i=0;i<this.answers.length;i++ ){
-            let a = this.h2e(`<label><input name="answer" tabindex="${i+1}" type="radio" value="${this.answers[i]}" class="answer" />${this.answers[i]}</label>`);
+            let a = this.h2e(`<label for="answer${i}"><input id="answer${i}" name="answer" tabindex="${i+1}" type="radio" value="${this.answers[i]}" class="answer" ${(i === 0) ? "checked='checked'" : ''}/>${this.answers[i]}</label>`);
             this.html.answers.push( a );
             this.html.answerWrap.appendChild( a );
         }
