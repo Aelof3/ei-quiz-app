@@ -96,7 +96,7 @@ export default class QUIZAppQuiz {
             location.reload( );
         }
 
-        let score = this.h2e( `<p>Score: ${this.questions.reduce( (a,b) => (b.correct) ? a+1 : a,0)}/${this.questionData.length}, or ${this.questions.reduce( (a,b) => (b.correct) ? a+1 : a,0) / this.questionData.length * 100}%</p>`);
+        let score = this.h2e( `<p>Score: ${this.questions.reduce( (a,b) => (b.correct) ? a+1 : a,0)}/${this.questionData.length}, or ${Math.floor( this.questions.reduce( (a,b) => (b.correct) ? a+1 : a,0) / this.questionData.length * 100 )}%</p>`);
 
         dashboard.appendChild( score );
         //dashboard.appendChild( currentQuestion );
